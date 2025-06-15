@@ -3,6 +3,12 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, TrendingUp, Smartphone } from "lucide-react";
 
 export const Hero = () => {
+  const scrollToHowItWorks = () => {
+    document.getElementById('how-it-works')?.scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  };
+
   return (
     <section className="pt-24 pb-12 lg:pt-32 lg:pb-20">
       <div className="container mx-auto px-4">
@@ -25,7 +31,12 @@ export const Hero = () => {
               <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 text-lg">
                 Start Your Free Trial
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-gray-300 hover:border-gray-400 px-8 py-4 text-lg">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-2 border-gray-300 hover:border-gray-400 px-8 py-4 text-lg"
+                onClick={scrollToHowItWorks}
+              >
                 See How It Works
               </Button>
             </div>
