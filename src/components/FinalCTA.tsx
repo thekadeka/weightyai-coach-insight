@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import { WaitlistForm } from "./WaitlistForm";
 
 export const FinalCTA = () => {
   return (
@@ -15,36 +16,30 @@ export const FinalCTA = () => {
             Stop the emotional rollercoaster. End the frustration of manual analysis. Take control of your fitness journey with clarity and confidence. Your expert AI coach is waiting.
           </p>
           
-          <div className="mb-8">
-            <Button 
-              size="lg" 
-              className="bg-white text-blue-600 hover:bg-gray-100 font-bold px-12 py-4 text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            >
-              Start My Free Trial Now
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+          <div className="mb-8 bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <WaitlistForm />
           </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-blue-100">
             <div className="flex items-center space-x-2">
               <CheckCircle className="w-5 h-5" />
-              <span>14-Day Free Trial</span>
+              <span>Launching Soon</span>
             </div>
             <div className="flex items-center space-x-2">
               <CheckCircle className="w-5 h-5" />
-              <span>Cancel Anytime</span>
+              <span>Be First to Access</span>
             </div>
             <div className="flex items-center space-x-2">
               <CheckCircle className="w-5 h-5" />
-              <span>Full Access to All Features</span>
+              <span>No Spam, Ever</span>
             </div>
           </div>
           
           <div className="mt-8 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
             <p className="text-blue-100 text-lg">
-              <strong>Join thousands</strong> who've already transformed their relationship with the scale. 
+              <strong>Join thousands</strong> who are waiting for the launch. 
               <br />
-              <span className="text-yellow-300">Your breakthrough moment is just one click away.</span>
+              <span className="text-yellow-300">Be the first to transform your relationship with the scale.</span>
             </p>
           </div>
         </div>

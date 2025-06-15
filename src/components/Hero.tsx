@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { MessageCircle, TrendingUp, Smartphone } from "lucide-react";
+import { WaitlistForm } from "./WaitlistForm";
 
 export const Hero = () => {
   const scrollToHowItWorks = () => {
@@ -27,28 +28,29 @@ export const Hero = () => {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 text-lg">
-                Start Your Free Trial
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-2 border-gray-300 hover:border-gray-400 px-8 py-4 text-lg"
-                onClick={scrollToHowItWorks}
-              >
-                See How It Works
-              </Button>
+            <div className="space-y-6">
+              <WaitlistForm />
+              
+              <div className="flex justify-center">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="border-2 border-gray-300 hover:border-gray-400 px-8 py-4 text-lg"
+                  onClick={scrollToHowItWorks}
+                >
+                  See How It Works
+                </Button>
+              </div>
             </div>
             
-            <div className="flex items-center space-x-8 text-sm text-gray-500">
+            <div className="flex items-center justify-center space-x-8 text-sm text-gray-500">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span>14-Day Free Trial</span>
+                <span>Launching Soon</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span>Cancel Anytime</span>
+                <span>Be First to Know</span>
               </div>
             </div>
           </div>

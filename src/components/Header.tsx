@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, BarChart3 } from "lucide-react";
 
 export const Header = () => {
+  const scrollToWaitlist = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
@@ -19,8 +23,11 @@ export const Header = () => {
           <a href="#testimonials" className="text-gray-600 hover:text-gray-900 transition-colors">Success Stories</a>
         </nav>
         
-        <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-6">
-          Start Free Trial
+        <Button 
+          onClick={scrollToWaitlist}
+          className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-6"
+        >
+          Join Waitlist
         </Button>
       </div>
     </header>
