@@ -8,7 +8,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/5fd75802-569b-4133-bbf8-a818ca618619.png" 
+                src="/lovable-uploads/3b4d8009-cb9b-44d0-bee0-93e6b5da6cbd.png" 
                 alt="WeightyAI Logo" 
                 className="w-8 h-8 object-contain"
               />
