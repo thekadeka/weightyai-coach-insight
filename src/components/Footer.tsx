@@ -1,4 +1,3 @@
-
 import { BarChart3, Mail, Twitter, Linkedin } from "lucide-react";
 
 export const Footer = () => {
@@ -7,10 +6,12 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <BarChart3 className="w-5 h-5 text-white" />
-              </div>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/5fd75802-569b-4133-bbf8-a818ca618619.png" 
+                alt="WeightyAI Logo" 
+                className="w-8 h-8 object-contain"
+              />
               <span className="text-xl font-bold text-white">WeightyAI</span>
             </div>
             <p className="text-gray-400">
