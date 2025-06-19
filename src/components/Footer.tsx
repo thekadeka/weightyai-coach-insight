@@ -34,7 +34,7 @@ export const Footer = () => {
             <h3 className="font-semibold text-white mb-4">Support</h3>
             <ul className="space-y-2">
               <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
               <li><Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
