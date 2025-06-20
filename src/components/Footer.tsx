@@ -1,8 +1,30 @@
-
 import { BarChart3, Mail, Twitter, Linkedin } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export const Footer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (anchor: string) => {
+    if (location.pathname !== '/') {
+      // Navigate to home page first
+      navigate('/');
+      // Small delay to ensure navigation completes before scrolling
+      setTimeout(() => {
+        const element = document.querySelector(anchor);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // Just scroll to the section if already on home page
+      const element = document.querySelector(anchor);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="container mx-auto px-4">
@@ -24,9 +46,30 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold text-white mb-4">Product</h3>
             <ul className="space-y-2">
-              <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-              <li><a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
+              <li>
+                <button 
+                  onClick={() => handleNavClick('#features')} 
+                  className="hover:text-white transition-colors text-left"
+                >
+                  Features
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => handleNavClick('#how-it-works')} 
+                  className="hover:text-white transition-colors text-left"
+                >
+                  How It Works
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => handleNavClick('#pricing')} 
+                  className="hover:text-white transition-colors text-left"
+                >
+                  Pricing
+                </button>
+              </li>
             </ul>
           </div>
           
