@@ -26,16 +26,7 @@ export const Solution = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-              Introducing the "AI Check-Up"
-            </h3>
-            <p className="text-xl text-gray-600">
-              One-Tap for a Complete Action Plan
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8 items-center">
+          <div className="grid lg:grid-cols-3 gap-8 items-center mb-16">
             {/* Before State */}
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <h4 className="text-xl font-bold text-red-600 mb-4 text-center">Before WeightyAI</h4>
@@ -92,7 +83,16 @@ export const Solution = () => {
             </div>
           </div>
 
-          <div className="mt-12 bg-white p-8 rounded-2xl shadow-lg">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+              Introducing the "AI Check-Up"
+            </h3>
+            <p className="text-xl text-gray-600">
+              One-Tap for a Complete Action Plan
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-2xl shadow-lg">
             <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
               With a single tap of the "AI Check-Up" button, you get:
             </h4>
