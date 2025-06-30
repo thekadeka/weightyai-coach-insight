@@ -6,19 +6,19 @@ export const HowItWorks = () => {
     {
       icon: Target,
       title: "Set Your Goal",
-      description: "Tell the AI your objective, like \"Lean Gains\" or \"Steady Weight Loss.\"",
+      description: "Tell the AI your objective (\"Lean Gains,\" \"Steady Weight Loss,\" etc.) so it can provide goal-specific analysis.",
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: Scale,
       title: "Log Your Weight",
-      description: "Quickly and easily log your daily weight in the app.",
+      description: "A quick, frictionless daily entry is all it takes.",
       color: "from-purple-500 to-purple-600"
     },
     {
       icon: MessageCircle,
-      title: "Chat with Your Coach",
-      description: "Tap the \"AI Check-Up\" button for an instant report or ask any question you want. Get a clear, personalized analysis in seconds.",
+      title: "Get Your Action Plan",
+      description: "Tap \"AI Check-Up\" for an instant report with caloric guidance, or chat directly with the coach for unlimited follow-up questions.",
       color: "from-green-500 to-green-600"
     }
   ];
@@ -28,11 +28,8 @@ export const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Get Expert Analysis in 3 Simple Steps
+            From Raw Numbers to Confident Decisions in 3 Steps
           </h2>
-          <p className="text-xl text-gray-600">
-            From confusion to clarity in minutes, not hours
-          </p>
         </div>
         
         <div className="max-w-5xl mx-auto">

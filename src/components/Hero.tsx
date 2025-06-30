@@ -17,14 +17,16 @@ export const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Stop Guessing. 
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Start Progressing.</span>
+                Your Weight Data Finally 
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Makes Sense.</span>
+                <br />
+                Your Next Steps Are Finally Clear.
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Finally understand your weight trends. Get clear, automated analysis and personalized guidance from an AI coach that knows your goals.
+                WeightyAI isn't another weight tracker. It's an intelligent coach that translates your weight trends into clear, narrative feedback and precise caloric adjustment suggestions.
               </p>
-              <p className="text-lg text-gray-500">
-                No more spreadsheets. No more confusion. Just clear answers.
+              <p className="text-lg text-gray-500 font-medium">
+                Stop wondering what to do next. Start knowing.
               </p>
             </div>
             
@@ -50,7 +52,7 @@ export const Hero = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span>Be First to Know</span>
+                <span>Priority Access</span>
               </div>
             </div>
           </div>
@@ -71,19 +73,19 @@ export const Hero = () => {
                 <div className="space-y-3">
                   <div className="bg-blue-50 rounded-lg p-3">
                     <p className="text-sm text-gray-700">
-                      "Great progress this week! Your weight trend shows a steady 1.2lb loss - exactly on target for your goal. The fluctuations on Tuesday were just normal water retention. Keep doing what you're doing! 💪"
+                      "Your velocity is perfect at -1.2lbs/week for your goal. The Tuesday spike was just water retention - your trend is steady. <strong>Consider increasing calories by 50-100 to maintain this rate as you progress.</strong> Keep going! 💪"
                     </p>
                   </div>
                   
                   <div className="bg-gray-50 rounded-lg p-3 text-right">
                     <p className="text-sm text-gray-700">
-                      "Should I adjust my calories since I had that cheat meal?"
+                      "Should I adjust my calories after that cheat meal?"
                     </p>
                   </div>
                   
                   <div className="bg-blue-50 rounded-lg p-3">
                     <p className="text-sm text-gray-700">
-                      "No need to adjust! One meal won't impact your overall trend. Your velocity is still perfect at -1.1lbs/week. Stay consistent with your current approach."
+                      "No adjustment needed! One meal won't impact your trend. Your progress velocity is still on target. Stay consistent with your current approach."
                     </p>
                   </div>
                 </div>
@@ -91,7 +93,7 @@ export const Hero = () => {
             </div>
             
             <div className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-              Live Analysis
+              AI Check-Up
             </div>
           </div>
         </div>

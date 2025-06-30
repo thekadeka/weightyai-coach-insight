@@ -4,19 +4,19 @@ import { MessageCircle, TrendingUp, Zap } from "lucide-react";
 export const Features = () => {
   const features = [
     {
+      icon: Zap,
+      title: "The Action Bridge: From Data to Caloric Guidance",
+      description: "While other apps show you charts, we give you a game plan. With one tap, get a full progress report with both qualitative feedback and concrete caloric suggestions, turning complex analysis into your next right step."
+    },
+    {
       icon: MessageCircle,
-      title: "One Conversation, All Your Answers",
-      description: "Whether you want a quick 'Check-Up' on your progress or have a specific question like 'Should I adjust my calories?', all interactions happen in one seamless, ongoing conversation. The AI remembers your history, so you never have to repeat yourself."
+      title: "The Explanatory Coach, Not a Black Box",
+      description: "Our AI explains the 'why' behind its analysis in a supportive, conversational tone. Understand *why* your weight fluctuates and *why* an adjustment is (or isn't) recommended, building true confidence in your strategy."
     },
     {
       icon: TrendingUp,
-      title: "Master Your Momentum",
-      description: "Our AI is an expert at analyzing the rate of your weight change. It tells you if you're on track, moving too fast, or slowing down, giving you nuanced feedback you can't get anywhere else."
-    },
-    {
-      icon: Zap,
-      title: "Your Fitness, Your Way",
-      description: "Whether you meticulously track calories or prefer a more intuitive approach to eating, our AI provides expert guidance based on your weight trends alone. We give you the insights, you choose the method."
+      title: "Specialized in Progress Velocity",
+      description: "Our AI is an expert at analyzing the *rate of weight change*. It gives you nuanced feedback on whether you're progressing faster, slower, or exactly on track, giving you a level of insight you can't get anywhere else."
     }
   ];
 
@@ -25,7 +25,7 @@ export const Features = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Core Features & Benefits
+            Finally, an AI That Actually Gets It.
           </h2>
         </div>
         

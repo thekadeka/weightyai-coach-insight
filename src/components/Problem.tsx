@@ -5,23 +5,23 @@ export const Problem = () => {
   const problems = [
     {
       icon: TrendingDown,
-      text: "You diligently log your weight, but the daily ups and downs leave you feeling anxious and confused."
+      quote: "Why is the scale going up? I was so good yesterday!",
+      text: "You're left confused and panicked by normal daily fluctuations, derailing your motivation."
     },
     {
       icon: HelpCircle,
-      text: "You stare at graphs and numbers, but have no idea what they actually mean for your progress."
-    },
-    {
-      icon: FileSpreadsheet,
-      text: "You spend hours in tedious spreadsheets trying to calculate your own trends, prone to errors and frustration."
-    },
-    {
-      icon: Frown,
-      text: "You've tried other apps, but get nothing but generic advice that doesn't apply to your specific goals."
+      quote: "Is this even working? I feel like I'm wasting my effort.",
+      text: "You work hard, but without clear feedback, you fear your effort is for nothing, suspecting an 'invisible saboteur' is undermining you."
     },
     {
       icon: AlertTriangle,
-      text: "You fear you're stuck on a plateau or that all your hard work in the gym and kitchen is for nothing."
+      quote: "Another plateau. I knew I couldn't do it. Maybe I should just give up.",
+      text: "Stagnation feels like a personal failure, triggering the baggage of past attempts and the urge to quit."
+    },
+    {
+      icon: FileSpreadsheet,
+      quote: "I wish someone would just tell me what to do next.",
+      text: "You're drowning in raw data from graphs and spreadsheets but starving for clear, actionable guidance."
     }
   ];
 
@@ -30,7 +30,7 @@ export const Problem = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Does This Sound Familiar?
+            Does Your Internal Monologue Sound Like This?
           </h2>
         </div>
         
@@ -39,13 +39,20 @@ export const Problem = () => {
             {problems.map((problem, index) => {
               const IconComponent = problem.icon;
               return (
-                <div key={index} className="flex items-start space-x-4 p-6 bg-red-50 border border-red-100 rounded-xl hover:bg-red-100 transition-colors">
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-                      <IconComponent className="w-5 h-5 text-white" />
+                <div key={index} className="p-8 bg-red-50 border border-red-100 rounded-xl hover:bg-red-100 transition-colors">
+                  <div className="flex items-start space-x-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                        <IconComponent className="w-6 h-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <blockquote className="text-xl font-semibold text-red-700 italic">
+                        "{problem.quote}"
+                      </blockquote>
+                      <p className="text-gray-700 text-lg leading-relaxed">{problem.text}</p>
                     </div>
                   </div>
-                  <p className="text-gray-700 text-lg leading-relaxed">{problem.text}</p>
                 </div>
               );
             })}

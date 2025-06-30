@@ -45,7 +45,7 @@ export const WaitlistForm = () => {
         setIsSuccess(true);
         setEmail("");
         toast({
-          title: "You're on the list! 🎉",
+          title: "You're on the priority list! 🎉",
           description: "We'll notify you as soon as WeightyAI launches.",
         });
       }
@@ -70,7 +70,7 @@ export const WaitlistForm = () => {
         <div>
           <h3 className="text-xl font-semibold text-gray-900 mb-2">You're in! 🎉</h3>
           <p className="text-gray-600">
-            We'll send you an email as soon as WeightyAI launches.
+            We'll send you priority access as soon as WeightyAI launches.
           </p>
         </div>
       </div>
@@ -97,11 +97,11 @@ export const WaitlistForm = () => {
           disabled={isLoading}
           className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 h-12 text-base whitespace-nowrap"
         >
-          {isLoading ? "Adding..." : "Get Notified at Launch"}
+          {isLoading ? "Adding..." : "Get Priority Access at Launch"}
         </Button>
       </div>
       <p className="text-sm text-gray-500 mt-3 text-center">
-        Join thousands waiting for the launch. No spam, ever.
+        Join thousands waiting for the launch. We will never share your email.
       </p>
     </form>
   );

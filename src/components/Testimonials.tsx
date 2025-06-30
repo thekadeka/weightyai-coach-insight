@@ -6,21 +6,21 @@ export const Testimonials = () => {
     {
       name: "Alex P.",
       role: "Fitness Enthusiast",
-      content: "I used to panic every time the scale went up. WeightyAI's coach explained it was just a normal fluctuation and showed me my long-term trend was still on track. It's been a game-changer for my mental health.",
+      content: "The daily scale fluctuations used to cause so much panic. The AI Coach showed me my underlying trend was perfect and explained *why* the number jumped. It's not just a feature; it's peace of mind. The fear of wasting my effort is gone.",
       image: "/placeholder.svg?height=80&width=80&text=Alex",
       rating: 5
     },
     {
       name: "Jessica R.",
       role: "Data Analyst",
-      content: "I was wasting hours in a spreadsheet trying to do this myself. The AI Check-Up gives me a better analysis in 10 seconds. It's saved me so much time and frustration.",
+      content: "I was doing manual 'spreadsheet gymnastics' for an hour a week, and I'm a data analyst! The AI Check-Up gives me a more accurate analysis—including a suggested calorie adjustment—in 10 seconds. The time and mental energy it saves is invaluable.",
       image: "/placeholder.svg?height=80&width=80&text=Jessica",
       rating: 5
     },
     {
       name: "Mike T.",
       role: "Personal Trainer",
-      content: "I was stuck and about to give up. The AI Coach helped me see my progress velocity had slowed and suggested a few things to consider. I'm finally making progress again. I feel so in control.",
+      content: "I hit a frustrating plateau and the fear of being stuck for good was creeping in. The AI Coach identified that my progress velocity had stalled and suggested a small caloric adjustment to break through it. I felt empowered, not like a failure. I'm making progress again and feel completely in control.",
       image: "/placeholder.svg?height=80&width=80&text=Mike",
       rating: 5
     }
@@ -31,11 +31,8 @@ export const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            From Confused to Confident
+            From Anxious and Stuck to Confident and In Control
           </h2>
-          <p className="text-xl text-gray-600">
-            Real stories from people who transformed their fitness journey
-          </p>
         </div>
         
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
