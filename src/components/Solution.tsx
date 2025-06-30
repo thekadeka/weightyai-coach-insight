@@ -64,7 +64,7 @@ export const Solution = () => {
             
             {/* After State */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border-2 border-green-200">
-              <h4 className="text-xl font-bold text-green-600 mb-4 text-center">With AI Check-Up</h4>
+              <h4 className="text-xl font-bold text-green-600 mb-4 text-center">With WeightyAI</h4>
               <div className="space-y-4">
                 <div className="h-32 bg-gradient-to-r from-green-100 to-blue-100 rounded-lg flex items-center justify-center">
                   <div className="text-center">
