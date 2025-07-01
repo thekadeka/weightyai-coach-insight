@@ -2,7 +2,7 @@ import { useState } from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Zap, TrendingDown, Calendar } from "lucide-react";
+import { Zap, TrendingDown, Calendar, ArrowRight } from "lucide-react";
 
 const mockWeightData = [
   { date: "Jan 1", weight: 185, trend: 185 },
@@ -119,8 +119,15 @@ export const AICheckupSection = () => {
                   )}
                 </Button>
 
+                {/* Arrow connecting button to result */}
                 {analysis && (
-                  <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg border-l-4 border-green-500">
+                  <div className="flex justify-center py-2">
+                    <ArrowRight className="w-6 h-6 text-blue-600 animate-pulse" />
+                  </div>
+                )}
+
+                {analysis && (
+                  <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg border-l-4 border-green-500 relative">
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
                         <Zap className="w-4 h-4 text-white" />
@@ -132,6 +139,15 @@ export const AICheckupSection = () => {
                           <Calendar className="w-4 h-4 mr-1" />
                           Analysis completed {new Date().toLocaleDateString()}
                         </div>
+                      </div>
+                    </div>
+                    {/* Arrow pointing to hero AI chat */}
+                    <div className="absolute -right-4 top-1/2 transform -translate-y-1/2">
+                      <div className="flex items-center">
+                        <ArrowRight className="w-8 h-8 text-purple-600 animate-bounce" />
+                        <span className="ml-2 text-sm font-medium text-purple-600 whitespace-nowrap">
+                          Just like the AI chat above!
+                        </span>
                       </div>
                     </div>
                   </div>
