@@ -4,6 +4,7 @@ import { MessageCircle, TrendingUp, Smartphone } from "lucide-react";
 import { WaitlistForm } from "./WaitlistForm";
 
 export const Hero = () => {
+  console.log("Hero component is rendering");
   const scrollToHowItWorks = () => {
     document.getElementById('how-it-works')?.scrollIntoView({ 
       behavior: 'smooth' 
