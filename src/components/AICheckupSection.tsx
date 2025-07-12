@@ -143,12 +143,7 @@ export const AICheckupSection = () => {
                     </div>
                     {/* Arrow pointing to hero AI chat */}
                     <div className="absolute -right-4 top-1/2 transform -translate-y-1/2">
-                      <div className="flex items-center">
-                        <ArrowRight className="w-8 h-8 text-purple-600 animate-bounce" />
-                        <span className="ml-2 text-sm font-medium text-purple-600 whitespace-nowrap">
-                          Just like the AI chat above!
-                        </span>
-                      </div>
+                      <ArrowRight className="w-8 h-8 text-purple-600 animate-bounce" />
                     </div>
                   </div>
                 )}
