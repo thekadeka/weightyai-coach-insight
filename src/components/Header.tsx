@@ -36,7 +36,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <img 
-            src="/lovable-uploads/3b4d8009-cb9b-44d0-bee0-93e6b5da6cbd.png" 
+            src="/lovable-uploads/c5a382ec-966e-442d-85da-c30bf58ff170.png" 
             alt="WeightyAI Logo" 
             className="w-10 h-10 object-contain"
           />
