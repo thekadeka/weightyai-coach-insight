@@ -119,12 +119,6 @@ export const AICheckupSection = () => {
                   )}
                 </Button>
 
-                {/* Arrow connecting button to result */}
-                {analysis && (
-                  <div className="flex justify-center py-2">
-                    <ArrowRight className="w-6 h-6 text-blue-600 animate-pulse" />
-                  </div>
-                )}
 
                 {analysis && (
                   <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg border-l-4 border-green-500 relative">
@@ -140,10 +134,6 @@ export const AICheckupSection = () => {
                           Analysis completed {new Date().toLocaleDateString()}
                         </div>
                       </div>
-                    </div>
-                    {/* Arrow pointing to hero AI chat */}
-                    <div className="absolute -right-4 top-1/2 transform -translate-y-1/2">
-                      <ArrowRight className="w-8 h-8 text-purple-600 animate-bounce" />
                     </div>
                   </div>
                 )}
