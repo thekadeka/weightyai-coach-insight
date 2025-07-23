@@ -46,16 +46,6 @@ export const Hero = () => {
               </div>
             </div>
             
-            <div className="flex items-center justify-center space-x-8 text-sm text-gray-500">
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span>Launching Soon</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span>Priority Access</span>
-              </div>
-            </div>
           </div>
           
           <div className="relative">

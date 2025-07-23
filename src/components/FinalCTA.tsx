@@ -24,28 +24,6 @@ export const FinalCTA = () => {
             <AppStoreButtons />
           </div>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-blue-100">
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5" />
-              <span>Launching Soon</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5" />
-              <span>Priority Access</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5" />
-              <span>Never Share Your Email</span>
-            </div>
-          </div>
-          
-          <div className="mt-8 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-            <p className="text-blue-100 text-lg">
-              <strong>Join thousands</strong> waiting for the launch. 
-              <br />
-              <span className="text-yellow-300">Transform your relationship with the scale forever.</span>
-            </p>
-          </div>
         </div>
       </div>
     </section>
