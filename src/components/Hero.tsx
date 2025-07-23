@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { MessageCircle, TrendingUp, Smartphone } from "lucide-react";
-import { WaitlistForm } from "./WaitlistForm";
+import { AppStoreButtons } from "./AppStoreButtons";
 
 export const Hero = () => {
   console.log("Hero component is rendering");
@@ -32,7 +32,7 @@ export const Hero = () => {
             </div>
             
             <div className="space-y-6">
-              <WaitlistForm />
+              <AppStoreButtons />
               
               <div className="flex justify-center">
                 <Button 

@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
-import { WaitlistForm } from "./WaitlistForm";
+import { AppStoreButtons } from "./AppStoreButtons";
 
 export const FinalCTA = () => {
   return (
@@ -21,7 +21,7 @@ export const FinalCTA = () => {
           </p>
           
           <div className="mb-8 bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <WaitlistForm />
+            <AppStoreButtons />
           </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-blue-100">
