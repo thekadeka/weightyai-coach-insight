@@ -43,7 +43,7 @@ export const Header = () => {
           <span className="text-xl font-bold text-gray-900">WeightyAI</span>
         </div>
         
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="flex items-center space-x-8">
           <button 
             onClick={() => handleNavClick('#how-it-works')} 
             className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -63,13 +63,6 @@ export const Header = () => {
             Success Stories
           </button>
         </nav>
-        
-        <Button 
-          onClick={scrollToWaitlist}
-          className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-6"
-        >
-          Join Waitlist
-        </Button>
       </div>
     </header>
   );
